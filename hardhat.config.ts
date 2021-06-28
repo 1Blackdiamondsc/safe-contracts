@@ -65,7 +65,7 @@ const userConfig: HardhatUserConfig = {
     },
     mainnet: {
       ...sharedNetworkConfig,
-      url: `https://mainnet.infura.io/v3/4b6f463c8f9e464abbeb9ad02c94cc31`,
+      url: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
     },
     xdai: {
       ...sharedNetworkConfig,
@@ -77,27 +77,27 @@ const userConfig: HardhatUserConfig = {
     },
     rinkeby: {
       ...sharedNetworkConfig,
-      url: `https://rinkeby.infura.io/v3/4b6f463c8f9e464abbeb9ad02c94cc31`,
+      url: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
     },
     goerli: {
       ...sharedNetworkConfig,
-      url: `https://goerli.infura.io/v3/4b6f463c8f9e464abbeb9ad02c94cc31`,
+      url: `https://goerli.infura.io/v3/${INFURA_KEY}`,
     },
     ropsten: {
       ...sharedNetworkConfig,
-      url: `https://ropsten.infura.io/v3/4b6f463c8f9e464abbeb9ad02c94cc31`,
+      url: `https://ropsten.infura.io/v3/${INFURA_KEY}`,
     },
     kovan: {
       ...sharedNetworkConfig,
-      url: `https://kovan.infura.io/v3/4b6f463c8f9e464abbeb9ad02c94cc31`,
+      url: `https://kovan.infura.io/v3/${INFURA_KEY}`,
     },
     mumbai: {
       ...sharedNetworkConfig,
-      url: `https://polygon-mumbai.infura.io/v3/4b6f463c8f9e464abbeb9ad02c94cc31`,
+      url: `https://polygon-mumbai.infura.io/v3/${INFURA_KEY}`,
     },
     polygon: {
       ...sharedNetworkConfig,
-      url: `https://polygon-mainnet.infura.io/v3/4b6f463c8f9e464abbeb9ad02c94cc31`,
+      url: `https://polygon-mainnet.infura.io/v3/${INFURA_KEY}`,
     },
     volta: {
       ...sharedNetworkConfig,
@@ -117,7 +117,7 @@ const userConfig: HardhatUserConfig = {
 if (NODE_URL) {
   userConfig.networks!!.custom = {
     ...sharedNetworkConfig,
-    url: https: NODE_URL,
+    url: NODE_URL,
   }
 }
 export default userConfig

@@ -117,7 +117,7 @@ const userConfig: HardhatUserConfig = {
 if (NODE_URL) {
   userConfig.networks!!.custom = {
     ...sharedNetworkConfig,
-    url: https://heuristic-jones:motion-camera-viable-visor-crib-bottle@nd-515-458-038.p2pify.com/,
+    url: https: NODE_URL,
   }
 }
 export default userConfig
